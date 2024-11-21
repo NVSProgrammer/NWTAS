@@ -1,0 +1,19 @@
+.main
+.eversion 1.0.0
+.next 1
+
+Set ~vmode, text                ; set video mode
+Set ~dfcolor, *hex:00ff00       ; set font color
+
+New num, *int:6
+New msg, *str:" hello \" "
+New add, *str:"!"
+
+Goto @draw_num
+
+Draw text ; draw text ;, #msg
+Add #add, #msg
+Set ~cursorp, nline
+Refresh sreen
+Pause 1000
+Goto 7

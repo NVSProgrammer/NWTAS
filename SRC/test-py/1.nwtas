@@ -1,0 +1,11 @@
+.global
+.bytes 8
+
+Set ~vmode, text
+New #num, *int:7
+
+New @draw_num
+New #num, *str:#num
+Draw text, #num
+Refresh screen
+End
